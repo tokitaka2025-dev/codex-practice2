@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>社内AI勉強会のお知らせ</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --accent: #4b6fff;
+      --accent-dark: #3a57d1;
+      --text-main: #1f2933;
+      --text-subtle: #52606d;
+      --surface: #ffffff;
+      --background: #f5f7fb;
+      --shadow: 0 20px 45px rgba(79, 114, 205, 0.18);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif;
+      background: radial-gradient(circle at top right, rgba(75, 111, 255, 0.12), transparent 45%),
+                  radial-gradient(circle at bottom left, rgba(255, 179, 71, 0.1), transparent 50%),
+                  var(--background);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .card {
+      max-width: 960px;
+      width: 100%;
+      background: var(--surface);
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      min-height: 540px;
+    }
+
+    .visual {
+      position: relative;
+      background: linear-gradient(135deg, rgba(75, 111, 255, 0.85), rgba(71, 210, 255, 0.65));
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-start;
+      padding: 40px;
+      overflow: hidden;
+    }
+
+    .visual::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url('https://images.unsplash.com/photo-1526378722484-bd91ca387e72?auto=format&fit=crop&w=1200&q=80') center/cover;
+      mix-blend-mode: screen;
+      opacity: 0.9;
+    }
+
+    .visual::after {
+      content: "AI STUDY";
+      position: absolute;
+      top: 40px;
+      right: -10px;
+      font-size: 80px;
+      font-weight: 800;
+      letter-spacing: 12px;
+      color: rgba(255, 255, 255, 0.14);
+      transform: rotate(-90deg);
+    }
+
+    .visual-content {
+      position: relative;
+      color: white;
+    }
+
+    .visual-content h1 {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+
+    .visual-content p {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.9);
+      max-width: 260px;
+    }
+
+    .info {
+      padding: 50px 48px;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      justify-content: center;
+      background: linear-gradient(180deg, rgba(75, 111, 255, 0.08), transparent 48%);
+    }
+
+    .info-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .info-header span {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 16px;
+      background: rgba(75, 111, 255, 0.12);
+      color: var(--accent);
+      font-size: 26px;
+      font-weight: 600;
+    }
+
+    .info-header h2 {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: var(--text-main);
+    }
+
+    .info-grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    .info-item {
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid rgba(75, 111, 255, 0.12);
+      border-radius: 20px;
+      padding: 22px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 18px;
+      align-items: center;
+      box-shadow: 0 10px 30px rgba(35, 57, 114, 0.08);
+      transition: transform 200ms ease, box-shadow 200ms ease;
+    }
+
+    .info-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 40px rgba(35, 57, 114, 0.12);
+    }
+
+    .info-item .label {
+      width: 54px;
+      height: 54px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(75, 111, 255, 0.22), rgba(75, 111, 255, 0.05));
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      letter-spacing: 0.05em;
+    }
+
+    .info-item .content-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .info-item .content-text {
+      font-size: 16px;
+      color: var(--text-subtle);
+      line-height: 1.5;
+    }
+
+    @media (max-width: 980px) {
+      .card {
+        grid-template-columns: 1fr;
+        min-height: unset;
+      }
+
+      .visual {
+        min-height: 360px;
+      }
+
+      .visual::after {
+        font-size: 64px;
+        top: 30px;
+      }
+
+      .info {
+        padding: 40px 28px 44px;
+      }
+
+      .info-item {
+        grid-template-columns: 1fr;
+        text-align: left;
+      }
+
+      .info-item .label {
+        justify-self: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <article class="card">
+    <section class="visual">
+      <div class="visual-content">
+        <h1>AIが切り拓く未来を、いっしょに学ぶ。</h1>
+        <p>最新トレンドの共有からハンズオンまで、チームで楽しく学べる社内勉強会です。</p>
+      </div>
+    </section>
+    <section class="info">
+      <header class="info-header">
+        <span>AI</span>
+        <h2>社内AI勉強会</h2>
+      </header>
+      <div class="info-grid">
+        <div class="info-item">
+          <div class="label">日時</div>
+          <div>
+            <div class="content-title">開催日時</div>
+            <div class="content-text">2024年7月25日（木） 15:00 - 17:30</div>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="label">場所</div>
+          <div>
+            <div class="content-title">開催場所</div>
+            <div class="content-text">本社ラウンジスペース（東京都千代田区丸の内1-2-3）</div>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="label">概要</div>
+          <div>
+            <div class="content-title">プログラム</div>
+            <div class="content-text">AI活用事例の紹介、最新ツールの体験、ディスカッションセッションなど盛りだくさんの内容を予定しています。</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+</body>
+</html>
