@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>初心者のためのAI勉強会</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+      --accent: #3d5afe;
+      --accent-soft: #e9edff;
+      --text-main: #1f1f1f;
+      --text-sub: #4b5563;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Noto Sans JP', 'Montserrat', sans-serif;
+      background: linear-gradient(180deg, #f6f7fb 0%, #ffffff 60%);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .card {
+      width: min(960px, 100%);
+      background: #fff;
+      border-radius: 32px;
+      box-shadow: 0 30px 80px rgba(16, 24, 40, 0.15);
+      overflow: hidden;
+    }
+
+    .hero {
+      position: relative;
+      height: clamp(260px, 45vw, 420px);
+      background-image:
+        linear-gradient(120deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.08)),
+        url('assets/ai-workshop-hero.svg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .hero::after {
+      content: "AI WORKSHOP";
+      position: absolute;
+      bottom: 20px;
+      right: 30px;
+      font-size: clamp(2rem, 6vw, 4rem);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.25em;
+      color: rgba(255,255,255,0.35);
+    }
+
+    .content {
+      padding: clamp(1.5rem, 4vw, 3rem);
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    mark,
+    .highlight {
+      background: #fff59d;
+      padding: 0.05em 0.2em;
+      border-radius: 0.5em;
+      box-decoration-break: clone;
+    }
+
+    .title-block h1 {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 700;
+      margin-bottom: 0.8rem;
+    }
+
+    .title-block p {
+      color: var(--text-sub);
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    .details {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+
+    .detail-item {
+      background: var(--accent-soft);
+      border-radius: 20px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      border: 1px solid rgba(61, 90, 254, 0.1);
+    }
+
+    .detail-label {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .detail-value {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+      .detail-value {
+        font-size: 1.05rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <article class="card">
+    <section class="hero" aria-label="AI workshop hero image"></section>
+    <section class="content">
+      <div class="title-block">
+        <h1><mark>初心者のためのAI勉強会</mark></h1>
+        <p><mark>「AIはなんとなく使っているけれど、どんなことができるのかわからない」「ChatGPTしか使ったことがなく、他のAIにも詳しくなりたい」という方に向けた勉強会です。AIの基礎知識から実際の使い方まで、一緒に幅広く学びましょう！</mark></p>
+      </div>
+      <div class="details">
+        <div class="detail-item">
+          <span class="detail-label">タイトル</span>
+          <span class="detail-value"><mark>初心者のためのAI勉強会</mark></span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">開催日時</span>
+          <span class="detail-value"><mark>2025年11月1日（土） 10:00〜12:00</mark></span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">場所</span>
+          <span class="detail-value"><mark>会議室A</mark></span>
+        </div>
+      </div>
+    </section>
+  </article>
+</body>
+</html>
