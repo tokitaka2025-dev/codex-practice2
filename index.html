@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI 勉強会ダッシュボード</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <div class="hero__text">
+        <p class="eyebrow">AI WORKSHOP</p>
+        <h1>初学者向けの AI 勉強会</h1>
+        <p class="subtitle">
+          生成 AI の基本を、たった 1 日のハンズオンで体験。少人数で質問しやすい環境と、
+          すぐに使えるサンプルを用意しています。差分とプレビューで見た目もすぐ確認できます。
+        </p>
+        <div class="info-banner" role="status">
+          <span class="info-banner__label">Diff + Preview</span>
+          <span class="info-banner__text">差分の横にプレビューを表示し、変更後のモックを確認できます。</span>
+        </div>
+        <div class="hero__actions">
+          <button class="btn btn-primary">参加する</button>
+          <button class="btn btn-ghost">詳細を見る</button>
+        </div>
+      </div>
+      <div class="hero__card">
+        <div class="badge badge-success">Next event</div>
+        <h2>初学者のための AI 勉強会</h2>
+        <p class="muted">日時: 8 月 20 日 (火) 17:00 - 20:00</p>
+        <p class="muted">場所: 12F カフェラウンジ / オンライン</p>
+        <div class="hero__image" aria-hidden="true"></div>
+        <button class="btn btn-primary full">参加する</button>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="section">
+        <div class="section__header">
+          <div>
+            <p class="eyebrow">Agenda</p>
+            <h3>勉強会の流れ</h3>
+            <p class="muted">初心者がつまずきやすいポイントを 3 つのセッションでカバーします。</p>
+          </div>
+          <div class="legend legend-light">
+            <span class="legend__item"><span class="dot dot-green"></span>受付中</span>
+            <span class="legend__item"><span class="dot dot-amber"></span>残りわずか</span>
+            <span class="legend__item"><span class="dot dot-grey"></span>満席</span>
+          </div>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card__top">
+              <div>
+                <p class="eyebrow">Session 1</p>
+                <h4>生成 AI の基本とプロンプト設計</h4>
+                <p class="muted">8 月 20 日 (火) 17:00 - 18:00</p>
+                <p class="muted">形式: ハンズオン / 質疑応答付き</p>
+              </div>
+              <span class="status status-open">受付中</span>
+            </div>
+            <p class="description">
+              LLM のしくみをやさしく解説し、効果的なプロンプトの作り方をデモ。自分の業務例で試し
+              つつ、その場でフィードバックを受けられます。
+            </p>
+            <div class="card__footer">
+              <div class="meta">
+                <span class="pill">定員 40 名</span>
+                <span class="pill">参加費 0 円</span>
+              </div>
+              <div class="actions">
+                <a class="btn btn-ghost" href="#">詳細を見る</a>
+                <a class="btn btn-primary" href="#">参加する</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <div>
+                <p class="eyebrow">Session 2</p>
+                <h4>API 連携で業務自動化</h4>
+                <p class="muted">8 月 20 日 (火) 18:00 - 19:00</p>
+                <p class="muted">形式: コードサンプル共有 / ライブデモ</p>
+              </div>
+              <span class="status status-soon">残りわずか</span>
+            </div>
+            <p class="description">
+              社内ツールと組み合わせて、デイリーのルーティンを自動化するミニワーク。GitHub Copilot
+              の活用パターンも合わせて紹介します。
+            </p>
+            <div class="card__footer">
+              <div class="meta">
+                <span class="pill">定員 35 名</span>
+                <span class="pill">参加費 0 円</span>
+              </div>
+              <div class="actions">
+                <a class="btn btn-ghost" href="#">詳細を見る</a>
+                <a class="btn btn-primary" href="#">参加する</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <div>
+                <p class="eyebrow">Session 3</p>
+                <h4>生成 AI で資料作成ブートキャンプ</h4>
+                <p class="muted">8 月 20 日 (火) 19:00 - 20:00</p>
+                <p class="muted">形式: チーム演習 / 成果共有</p>
+              </div>
+              <span class="status status-full">満席</span>
+            </div>
+            <p class="description">
+              スライドのアウトライン生成や図解提案を実践。完成したテンプレートをそのまま社内で
+              再利用できるよう配布します。キャンセル待ち登録も可能です。
+            </p>
+            <div class="card__footer">
+              <div class="meta">
+                <span class="pill">定員 30 名</span>
+                <span class="pill">参加費 0 円</span>
+              </div>
+              <div class="actions">
+                <a class="btn btn-ghost" href="#">キャンセル待ち</a>
+                <a class="btn btn-primary disabled" href="#" aria-disabled="true">参加する</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section highlights">
+        <div class="highlight-card">
+          <div>
+            <p class="eyebrow">参加状況</p>
+            <h3>エントリーの伸び</h3>
+            <p class="muted">直近 7 日で申込が加速しています。</p>
+          </div>
+          <div class="stat">
+            <span class="stat__number">+23</span>
+            <span class="stat__label">新しい参加登録</span>
+          </div>
+          <div class="progress">
+            <div class="progress__bar" style="width: 82%"></div>
+          </div>
+          <p class="muted">目標の 82% に到達。残席が埋まる前に周知を強化しましょう。</p>
+        </div>
+
+        <div class="mini-cards">
+          <div class="mini-card">
+            <p class="eyebrow">人気テーマ</p>
+            <h4>プロンプト設計 / 自動化</h4>
+            <p class="muted">実務に直結するテーマが支持されています。</p>
+          </div>
+          <div class="mini-card">
+            <p class="eyebrow">サポート体制</p>
+            <h4>メンター 4 名が伴走</h4>
+            <p class="muted">質問チャットとコードレビューを当日開放。</p>
+          </div>
+          <div class="mini-card">
+            <p class="eyebrow">次の一歩</p>
+            <h4>社内 PoC 募集中</h4>
+            <p class="muted">ワークショップ後にチーム導入をサポートします。</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
