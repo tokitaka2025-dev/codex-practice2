@@ -1,0 +1,47 @@
+<svg width="540" height="540" viewBox="0 0 540 540" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">乾杯するビールジョッキのイラスト</title>
+  <desc id="desc">泡があふれるビールジョッキを茶色い手が持ち上げているフラットなイラスト。</desc>
+  <rect width="540" height="540" rx="32" fill="#13150E" />
+  <g filter="url(#glow)">
+    <circle cx="140" cy="120" r="8" fill="#E6EB9A"/>
+    <circle cx="172" cy="86" r="7" fill="#E6EB9A"/>
+    <circle cx="210" cy="122" r="6" fill="#E6EB9A"/>
+    <circle cx="236" cy="88" r="7" fill="#E6EB9A"/>
+    <circle cx="266" cy="124" r="6" fill="#E6EB9A"/>
+  </g>
+  <path d="M124 116c0-22 18-40 40-40h118c14 0 26 12 26 26v198c0 34-28 62-62 62h-82c-22 0-40-18-40-40V116Z" fill="#F09B2D" stroke="#FCD47E" stroke-width="14" stroke-linejoin="round"/>
+  <rect x="140" y="136" width="148" height="214" rx="20" fill="#F5B23B" stroke="#FCD47E" stroke-width="10"/>
+  <rect x="166" y="170" width="24" height="160" rx="8" fill="#F6E5AE" opacity="0.8"/>
+  <rect x="206" y="170" width="24" height="160" rx="8" fill="#F6E5AE" opacity="0.8"/>
+  <rect x="246" y="170" width="24" height="160" rx="8" fill="#F6E5AE" opacity="0.8"/>
+  <path d="M106 138c6-30 30-52 60-52h100c28 0 56 12 74 34 10 13 1 32-15 32H106Z" fill="#F9F2DA" stroke="#FDF6EA" stroke-width="12" stroke-linecap="round"/>
+  <path d="M110 144c-7 26 12 50 39 50h176c22 0 40-18 40-40 0-14-7-26-18-33" fill="#FBF1DA"/>
+  <path d="M326 160h46c24 0 44 20 44 44v24c0 44-36 80-80 80h-26" stroke="#FCD47E" stroke-width="16" stroke-linecap="round"/>
+  <path d="M324 186h46c12 0 22 10 22 22v14c0 28-22 50-50 50h-18" stroke="#F09B2D" stroke-width="12" stroke-linecap="round"/>
+  <path d="M332 250h32c18 0 32 14 32 32v22c0 26-22 48-48 48h-24" stroke="#F09B2D" stroke-width="12" stroke-linecap="round" opacity="0.8"/>
+  <path d="M348 296h22c6 0 10 4 10 10v26c0 18-14 32-32 32h-14" stroke="#F09B2D" stroke-width="10" stroke-linecap="round" opacity="0.6"/>
+  <path d="M330 310c-10 0-18 8-18 18 0 8 4 14 10 18v24c0 16 14 30 30 30h14c24 0 44-20 44-44v-28c0-12-10-22-22-22h-58Z" fill="#825430"/>
+  <path d="M360 326h14c6 0 10 4 10 10v22c0 12-10 22-22 22h-10c-10 0-18-8-18-18v-18c0-10 8-18 18-18Z" fill="#9C6C3E"/>
+  <path d="M268 346h114c18 0 32-14 32-32 0-18-14-32-32-32H268" fill="#9C6C3E"/>
+  <path d="M154 320h184c16 0 30 12 32 28l2 12c4 26-14 50-40 52-40 4-82 6-128 2-32-2-54-32-48-64l4-20c2-6 8-10 14-10Z" fill="#B47C44"/>
+  <rect x="140" y="304" width="120" height="32" rx="12" fill="#C6874D"/>
+  <path d="M120 332c2-10 12-16 22-16h170c14 0 26 10 28 24l4 22c4 22-12 42-34 44l-46 4c-34 2-68 0-102-6-20-4-34-22-30-42l8-30Z" fill="#9C6C3E"/>
+  <rect x="168" y="276" width="126" height="52" rx="20" fill="#C98C4D"/>
+  <path d="M112 328h40c12 0 22 10 22 22v32c0 28-18 52-46 60-16 6-34-4-38-22l-16-72c-4-16 8-32 26-32Z" fill="#8A5A2E"/>
+  <rect x="116" y="316" width="94" height="32" rx="14" fill="#A86D3A"/>
+  <rect x="108" y="350" width="84" height="30" rx="12" fill="#C5894E"/>
+  <rect x="138" y="366" width="66" height="24" rx="10" fill="#B07743"/>
+  <rect x="186" y="364" width="178" height="34" rx="16" fill="#C5894E" opacity="0.8"/>
+  <rect x="194" y="380" width="146" height="18" rx="9" fill="#9C6C3E" opacity="0.8"/>
+  <path d="M194 260h16c8 0 14 6 14 14 0 8-6 14-14 14h-16v-28Z" fill="#EED7B3"/>
+  <path d="M212 256h18c6 0 10 4 10 10 0 6-4 10-10 10h-18v-20Z" fill="#C98C4D"/>
+  <defs>
+    <filter id="glow" x="120" y="72" width="170" height="80" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+</svg>
