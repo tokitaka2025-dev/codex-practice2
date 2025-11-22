@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">社内飲み会ダッシュボード モックアップのプレビュー</title>
+  <desc id="desc">Diff + Preview を示す2カラムの疑似画面。左にコード差分、右にプレビューカードが並ぶ。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f7ff"/>
+      <stop offset="100%" stop-color="#e8eefc"/>
+    </linearGradient>
+    <linearGradient id="header" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6c7cff"/>
+      <stop offset="100%" stop-color="#5cc6ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#9bb0f1" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)" rx="24"/>
+  <rect x="40" y="40" width="1120" height="80" rx="18" fill="url(#header)" opacity="0.95"/>
+  <text x="70" y="92" font-family="'Inter', system-ui" font-weight="700" font-size="28" fill="#fff">Diff + Preview モックアップ</text>
+  <text x="70" y="124" font-family="'Inter', system-ui" font-weight="400" font-size="16" fill="#f4f6ff">差分とプレビューが横に並んだイメージ</text>
+  <g transform="translate(60,160)">
+    <rect width="520" height="560" rx="22" fill="#ffffff" filter="url(#shadow)"/>
+    <text x="30" y="46" font-family="'Inter', system-ui" font-weight="700" font-size="22" fill="#111">Diff (左)</text>
+    <rect x="30" y="70" width="460" height="420" rx="14" fill="#f6f8ff" stroke="#e4e9fa"/>
+    <rect x="50" y="100" width="120" height="12" rx="6" fill="#ced7f6"/>
+    <rect x="190" y="100" width="120" height="12" rx="6" fill="#c5e7ff"/>
+    <rect x="50" y="130" width="340" height="10" rx="5" fill="#dfe5fb"/>
+    <rect x="50" y="160" width="300" height="10" rx="5" fill="#dfe5fb"/>
+    <rect x="50" y="190" width="280" height="10" rx="5" fill="#dfe5fb"/>
+    <rect x="50" y="230" width="380" height="10" rx="5" fill="#ffe3b8"/>
+    <rect x="50" y="260" width="340" height="10" rx="5" fill="#ffe3b8"/>
+    <rect x="50" y="300" width="400" height="10" rx="5" fill="#c8f2dd"/>
+    <rect x="50" y="330" width="360" height="10" rx="5" fill="#c8f2dd"/>
+    <rect x="50" y="370" width="420" height="10" rx="5" fill="#dfe5fb"/>
+    <rect x="50" y="400" width="260" height="10" rx="5" fill="#dfe5fb"/>
+    <rect x="50" y="430" width="340" height="10" rx="5" fill="#dfe5fb"/>
+    <rect x="30" y="510" width="140" height="30" rx="12" fill="#ecf0ff"/>
+    <text x="60" y="532" font-family="'Inter', system-ui" font-weight="600" font-size="14" fill="#6070c2">差分を確認</text>
+  </g>
+  <g transform="translate(640,160)">
+    <rect width="500" height="560" rx="22" fill="#ffffff" filter="url(#shadow)"/>
+    <text x="30" y="46" font-family="'Inter', system-ui" font-weight="700" font-size="22" fill="#111">Preview (右)</text>
+    <rect x="30" y="80" width="440" height="120" rx="16" fill="#f2f7ff" stroke="#e1e9ff"/>
+    <rect x="50" y="105" width="180" height="14" rx="7" fill="#5f8bff" opacity="0.9"/>
+    <rect x="50" y="135" width="260" height="12" rx="6" fill="#c8d6ff"/>
+    <rect x="50" y="160" width="200" height="12" rx="6" fill="#c8d6ff"/>
+    <rect x="30" y="230" width="440" height="180" rx="18" fill="#fef6e7" stroke="#f5d9a2"/>
+    <circle cx="80" cy="260" r="16" fill="#ffe0b2"/>
+    <circle cx="120" cy="260" r="16" fill="#ffe0b2"/>
+    <circle cx="160" cy="260" r="16" fill="#ffe0b2"/>
+    <rect x="200" y="246" width="180" height="16" rx="8" fill="#111827" opacity="0.8"/>
+    <rect x="50" y="300" width="360" height="12" rx="6" fill="#e8cd8b"/>
+    <rect x="50" y="330" width="300" height="12" rx="6" fill="#e8cd8b"/>
+    <rect x="50" y="360" width="220" height="12" rx="6" fill="#e8cd8b"/>
+    <rect x="30" y="440" width="150" height="36" rx="14" fill="#5c8dff" opacity="0.9"/>
+    <rect x="200" y="440" width="150" height="36" rx="14" fill="#e4ecff"/>
+    <text x="70" y="464" font-family="'Inter', system-ui" font-weight="600" font-size="14" fill="#fff">参加フォーム</text>
+    <text x="226" y="464" font-family="'Inter', system-ui" font-weight="600" font-size="14" fill="#4c5f92">詳細を見る</text>
+  </g>
+</svg>
