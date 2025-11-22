@@ -1,0 +1,9 @@
+{
+  "name": "company-drink-preview",
+  "version": "1.0.0",
+  "description": "Preview server for the社内飲み会 mockup",
+  "type": "module",
+  "scripts": {
+    "preview": "node preview.js"
+  }
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>社内飲み会ダッシュボード</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <div class="hero__text">
+        <p class="eyebrow">社内イベント</p>
+        <h1>飲み会の概要をひと目で</h1>
+        <p class="subtitle">
+          モダンで親しみやすい社内飲み会のモックアップページです。場所、日時、参加フォームを
+          一覧で確認し、気になるイベントにすぐ申し込めます。
+        </p>
+        <div class="info-banner" role="status">
+          <span class="info-banner__label">Diff + Preview</span>
+          <span class="info-banner__text">差分とプレビューでモックアップのイメージをいつでも確認できます。</span>
+        </div>
+        <div class="diff-preview">
+          <div class="diff-preview__panel diff-preview__panel--diff">
+            <div class="diff-preview__title">Diff</div>
+            <p class="diff-preview__text">コードの変更点を左で確認。小さなスタイル差分も拾えます。</p>
+          </div>
+          <div class="diff-preview__panel diff-preview__panel--preview">
+            <div class="diff-preview__title">Preview</div>
+            <p class="diff-preview__text">プレビューで完成形をチェック。実際の見た目をサクッと確認。</p>
+            <div class="diff-preview__mock">
+              <div class="diff-preview__mock-header"></div>
+              <div class="diff-preview__mock-body">
+                <span class="diff-preview__chip"></span>
+                <span class="diff-preview__chip"></span>
+                <span class="diff-preview__chip"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero__actions">
+          <button class="btn btn-primary">次回の参加フォームへ</button>
+          <button class="btn btn-ghost">イベントカレンダーを見る</button>
+        </div>
+      </div>
+      <div class="hero__card">
+        <div class="badge">次回開催</div>
+        <h2>サマーウェルカムパーティー</h2>
+        <p class="muted">7月18日 (木) 19:00 - 22:00</p>
+        <p class="muted">場所: 恵比寿 ガーデンホール</p>
+        <div class="attendee-row">
+          <div class="avatars">
+            <span class="avatar">🍻</span>
+            <span class="avatar">😊</span>
+            <span class="avatar">🎉</span>
+          </div>
+          <div class="pill">参加予定 58 名</div>
+        </div>
+        <button class="btn btn-primary full">参加フォームを開く</button>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="section">
+        <div class="section__header">
+          <div>
+            <p class="eyebrow">Upcoming</p>
+            <h3>開催予定の飲み会</h3>
+            <p class="muted">チーム横断の懇親会や季節イベントをまとめています。</p>
+          </div>
+          <div class="legend">
+            <span class="legend__item"><span class="dot dot-green"></span>受付中</span>
+            <span class="legend__item"><span class="dot dot-amber"></span>まもなく締切</span>
+            <span class="legend__item"><span class="dot dot-grey"></span>満席</span>
+          </div>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card__top">
+              <div>
+                <p class="eyebrow">部署シャッフル</p>
+                <h4>クロスチーム交流ナイト</h4>
+                <p class="muted">7月25日 (木) 18:30 - 21:30</p>
+                <p class="muted">場所: 渋谷 スカイバルコニー</p>
+              </div>
+              <span class="status status-open">受付中</span>
+            </div>
+            <p class="description">
+              プロジェクトの垣根を越えて交流するカジュアルな飲み会。少人数グループでの自己紹介や
+              ランダム席替えタイムで新しい出会いを楽しめます。
+            </p>
+            <div class="card__footer">
+              <div class="meta">
+                <span class="pill">定員 40 名</span>
+                <span class="pill">参加費 0 円</span>
+              </div>
+              <div class="actions">
+                <a class="btn btn-ghost" href="#">詳細を見る</a>
+                <a class="btn btn-primary" href="#">参加フォーム</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <div>
+                <p class="eyebrow">季節イベント</p>
+                <h4>ビアガーデンで暑気払い</h4>
+                <p class="muted">8月2日 (金) 19:00 - 22:00</p>
+                <p class="muted">場所: 東京ミッドタウン ルーフトップ</p>
+              </div>
+              <span class="status status-soon">まもなく締切</span>
+            </div>
+            <p class="description">
+              夏限定のビアガーデンを貸し切り。仕事終わりに気軽に立ち寄れるライトなプランで、
+              ドリンクチケットと軽食が付いてきます。
+            </p>
+            <div class="card__footer">
+              <div class="meta">
+                <span class="pill">定員 60 名</span>
+                <span class="pill">参加費 1,500 円</span>
+              </div>
+              <div class="actions">
+                <a class="btn btn-ghost" href="#">詳細を見る</a>
+                <a class="btn btn-primary" href="#">参加フォーム</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <div>
+                <p class="eyebrow">オフサイト</p>
+                <h4>海辺のロッジでBBQ</h4>
+                <p class="muted">8月22日 (木) 11:00 - 16:00</p>
+                <p class="muted">場所: 江ノ島 シーサイドロッジ</p>
+              </div>
+              <span class="status status-full">満席</span>
+            </div>
+            <p class="description">
+              海を眺めながらのデイタイムBBQ。送迎バス付きで、アクティビティやチーム対抗ゲームも
+              予定しています。増枠リクエストはフォームからお知らせください。
+            </p>
+            <div class="card__footer">
+              <div class="meta">
+                <span class="pill">定員 30 名</span>
+                <span class="pill">参加費 3,000 円</span>
+              </div>
+              <div class="actions">
+                <a class="btn btn-ghost" href="#">キャンセル待ち</a>
+                <a class="btn btn-primary disabled" href="#" aria-disabled="true">参加フォーム</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section highlights">
+        <div class="highlight-card">
+          <div>
+            <p class="eyebrow">直近の反応</p>
+            <h3>参加希望の動き</h3>
+            <p class="muted">直近1週間の参加登録が増えています。</p>
+          </div>
+          <div class="stat">
+            <span class="stat__number">+23</span>
+            <span class="stat__label">新しい参加登録</span>
+          </div>
+          <div class="progress">
+            <div class="progress__bar" style="width: 68%"></div>
+          </div>
+          <p class="muted">目標の68%に到達。今週中に告知をもう一度流しましょう。</p>
+        </div>
+
+        <div class="mini-cards">
+          <div class="mini-card">
+            <p class="eyebrow">人気スポット</p>
+            <h4>恵比寿 / 渋谷エリア</h4>
+            <p class="muted">アクセスの良さで満足度が高いロケーションです。</p>
+          </div>
+          <div class="mini-card">
+            <p class="eyebrow">アンケート</p>
+            <h4>75% が「また参加したい」と回答</h4>
+            <p class="muted">雰囲気の良さとカジュアルさが好評です。</p>
+          </div>
+          <div class="mini-card">
+            <p class="eyebrow">次のアイデア</p>
+            <h4>テーマ別ドレスコード</h4>
+            <p class="muted">写真映えする夜景バーでの開催を検討中。</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
