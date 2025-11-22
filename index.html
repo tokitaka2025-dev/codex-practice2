@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>忘年会</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <div class="hero__body">
+        <div class="hero__copy">
+          <div class="hero__eyebrow">初心者歓迎</div>
+          <h1 class="hero__title">忘年会</h1>
+          <p class="hero__subtitle">ざっくばらんな飲み会形式でAIを語る夕べ。家族のことも仕事のことも、気軽に話しながら学びましょう。</p>
+          <div class="hero__tags">
+            <span class="tag">カジュアル</span>
+            <span class="tag">社内交流</span>
+            <span class="tag">自由参加</span>
+          </div>
+        </div>
+        <figure class="hero__visual">
+          <img src="assets/cheers.svg" alt="ビールジョッキを掲げる手のイラスト" loading="lazy" />
+          <figcaption class="hero__badge">
+            <span>乾杯しながら</span>
+            <strong>AIを語ろう</strong>
+          </figcaption>
+        </figure>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="card card--primary">
+        <div class="card__header">
+          <div class="card__title">イベント概要</div>
+          <span class="pill pill--accent">カジュアル勉強会</span>
+        </div>
+        <div class="event-grid">
+          <div class="event-item">
+            <div class="event-icon">📅</div>
+            <div class="event-detail">
+              <p class="label">日時</p>
+              <p class="value">2025年12月6日 (土) 18:00〜</p>
+            </div>
+          </div>
+          <div class="event-item">
+            <div class="event-icon">📍</div>
+            <div class="event-detail">
+              <p class="label">場所</p>
+              <p class="value">集来軒</p>
+              <p class="note">気軽に寄れる街の中華屋さん。リラックスしてお話しできます。</p>
+            </div>
+          </div>
+          <div class="event-item">
+            <div class="event-icon">👥</div>
+            <div class="event-detail">
+              <p class="label">定員</p>
+              <p class="value">20名 (先着 / 社員＋ご家族も歓迎)</p>
+            </div>
+          </div>
+          <div class="event-item">
+            <div class="event-icon">💡</div>
+            <div class="event-detail">
+              <p class="label">テーマ</p>
+              <p class="value">フリー</p>
+            </div>
+          </div>
+        </div>
+        <div class="progress">
+          <div class="progress__label">参加予定</div>
+          <div class="progress__bar" aria-valuemin="0" aria-valuemax="20" aria-valuenow="12">
+            <span style="width: 60%"></span>
+          </div>
+          <div class="progress__count">12 / 20</div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card__header">
+          <div class="card__title">こんな会です</div>
+        </div>
+        <ul class="features">
+          <li>
+            <div class="feature-icon">✨</div>
+            <div>
+              <p class="feature-title">ライトな雰囲気</p>
+              <p class="feature-text">ドレスコード不要。AIの専門知識ゼロでも大丈夫、気になることを何でも聞ける空気です。</p>
+            </div>
+          </li>
+          <li>
+            <div class="feature-icon">🥂</div>
+            <div>
+              <p class="feature-title">食事とドリンクで交流</p>
+              <p class="feature-text">集来軒の一品料理とドリンクを楽しみながら、家族や仕事の話も交えてゆったり。</p>
+            </div>
+          </li>
+          <li>
+            <div class="feature-icon">💬</div>
+            <div>
+              <p class="feature-title">ミニレクチャーと雑談</p>
+              <p class="feature-text">AIの基本を10分で共有したあと、日常での活用例や疑問をざっくばらんに話せる時間をたっぷり。</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <div class="card__header">
+          <div class="card__title">当日の流れ</div>
+        </div>
+        <ol class="timeline">
+          <li>
+            <div class="time">18:00</div>
+            <div class="timeline-content">
+              <p class="timeline-title">集合・アイスブレイク</p>
+              <p class="timeline-text">軽く自己紹介をしつつ、今日気になっているAIトピックを一言シェア。</p>
+            </div>
+          </li>
+          <li>
+            <div class="time">18:20</div>
+            <div class="timeline-content">
+              <p class="timeline-title">ミニレクチャー</p>
+              <p class="timeline-text">「AIの基本」を10分でおさらい。用語や仕組みを初心者向けに整理します。</p>
+            </div>
+          </li>
+          <li>
+            <div class="time">18:40</div>
+            <div class="timeline-content">
+              <p class="timeline-title">ゆるトーク＆食事</p>
+              <p class="timeline-text">集来軒のメニューを楽しみながら、日常の活用例や疑問をフリートーク。</p>
+            </div>
+          </li>
+          <li>
+            <div class="time">19:30</div>
+            <div class="timeline-content">
+              <p class="timeline-title">まとめ・質問タイム</p>
+              <p class="timeline-text">気づきを共有してクールダウン。途中退出もお気軽にどうぞ。</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <aside class="card card--form">
+        <div class="card__header">
+          <div class="card__title">参加希望フォーム</div>
+          <span class="pill">3分で完了</span>
+        </div>
+        <form class="form" id="rsvp-form">
+          <label class="form__field">
+            <span class="form__label">お名前</span>
+            <input type="text" name="name" placeholder="例: 山田 太郎" required />
+          </label>
+          <label class="form__field">
+            <span class="form__label">部署 / チーム</span>
+            <input type="text" name="team" placeholder="例: プロダクト開発部" required />
+          </label>
+          <label class="form__field">
+            <span class="form__label">メールアドレス</span>
+            <input type="email" name="email" placeholder="company@example.com" required />
+          </label>
+          <label class="form__field">
+            <span class="form__label">参加ステータス</span>
+            <div class="chip-group">
+              <label class="chip">
+                <input type="radio" name="status" value="参加したい" checked />
+                <span>参加したい</span>
+              </label>
+              <label class="chip">
+                <input type="radio" name="status" value="日程調整中" />
+                <span>日程調整中</span>
+              </label>
+              <label class="chip">
+                <input type="radio" name="status" value="欠席" />
+                <span>今回は欠席</span>
+              </label>
+            </div>
+          </label>
+          <label class="form__field">
+            <span class="form__label">ひとこと</span>
+            <textarea name="message" rows="3" placeholder="アレルギーやリクエストがあればお知らせください"></textarea>
+          </label>
+          <button type="submit" class="button">フォームを送信</button>
+          <p class="form__footnote">送信後に確認メールをお送りします。キャンセルも同メールから可能です。</p>
+          <div class="form__preview" id="form-preview" aria-live="polite">
+            <p class="form__preview-title">入力内容プレビュー</p>
+            <p class="form__preview-hint">入力するとこの場で反映されます。送信後も内容は編集できます。</p>
+            <dl>
+              <div>
+                <dt>お名前</dt>
+                <dd id="preview-name">—</dd>
+              </div>
+              <div>
+                <dt>部署 / チーム</dt>
+                <dd id="preview-team">—</dd>
+              </div>
+              <div>
+                <dt>メール</dt>
+                <dd id="preview-email">—</dd>
+              </div>
+              <div>
+                <dt>ステータス</dt>
+                <dd id="preview-status">—</dd>
+              </div>
+              <div>
+                <dt>ひとこと</dt>
+                <dd id="preview-message">—</dd>
+              </div>
+            </dl>
+          </div>
+        </form>
+        <div class="toast" id="toast" role="status" aria-live="polite">
+          <span>送信しました！幹事からの連絡をお待ちください。</span>
+        </div>
+      </aside>
+    </main>
+  </div>
+  <script src="assets/script.js"></script>
+</body>
+</html>
